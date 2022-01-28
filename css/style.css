@@ -3,6 +3,7 @@
 *, *::after, *::before {
     margin: 0px;
     padding: 0px;
+    list-style: none;
     box-sizing: border-box;
 }
 
@@ -19,4 +20,77 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+/* WELCOME INTRODUCTION */
+#welcome-intro {
+    display: grid;
+    grid-template-rows: 86px 1fr;
+    grid-template-areas: 
+    "navbar"
+    "welcome-section";
+
+    height: 100vh;
+    background-color: var(--main-gray);
+}
+
+/* NAVBAR */
+#navbar {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    height: fit-content;
+    background-color: var(--main-red);
+}
+
+#logo {
+    width: clamp(5rem, 5vw, 8rem);
+    margin-left: 1rem;
+}
+
+#links-wrapper {
+    display: flex;
+}
+
+.links {
+    display: block;
+    padding: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-gray);
+    font-family: var(--font-poppins);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.links:hover {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+}
+
+/* WELCOME SECTION */
+#welcome-section {
+    grid-area: welcome-section;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#main-title {
+    color: var(--main-white);
+    font-family: var(--font-raleway);
+    font-size: clamp(2.8rem, 5vw, 6rem);
+}
+
+#off-title {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--main-red);
+    font-family: var(--font-raleway);
+    font-size: clamp(2.5rem, 5vw, 4rem);
 }
