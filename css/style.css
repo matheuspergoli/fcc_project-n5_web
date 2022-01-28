@@ -77,14 +77,12 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 #main-title {
     color: var(--main-white);
     font-family: var(--font-raleway);
-    font-size: clamp(2.8rem, 5vw, 6rem);
+    font-size: clamp(3rem, 5vw, 6rem);
 }
 
 #off-title {
