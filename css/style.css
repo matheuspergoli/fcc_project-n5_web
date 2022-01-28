@@ -40,15 +40,15 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0%;
-    height: fit-content;
+    position: fixed;
+    width: 100%;
     background-color: var(--main-red);
+    box-shadow: 0px 2px 0px 0px var(--main-gray);
 }
 
 #logo {
-    width: clamp(5rem, 5vw, 8rem);
     margin: 0px 1rem 0px 1rem;
+    width: clamp(5rem, 5vw, 8rem);
 }
 
 #links-wrapper {
@@ -91,4 +91,32 @@ html {
     color: var(--main-red);
     font-family: var(--font-raleway);
     font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+/* PROJECTS */
+#projects-container {
+    display: grid;
+    grid-template-rows: 86px 1fr;
+    grid-template-areas: 
+    "empty"
+    "projects";
+
+    height: 100vh;
+    background-color: var(--main-blue);
+}
+
+#projects {
+    grid-area: projects;
+    display: flex;
+    justify-content: center;
+}
+
+#title-projetcs {
+    margin-top: 5rem;
+    height: fit-content;
+    padding-bottom: 0.5rem;
+    color: var(--main-white);
+    font-family: var(--font-raleway);
+    font-size: clamp(2.5rem, 5vw, 6rem);
+    border-bottom: 3px solid var(--main-white);
 }
