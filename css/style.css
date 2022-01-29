@@ -146,6 +146,10 @@ html {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
+.img-info a {
+    text-decoration: none;
+}
+
 .project-tile img {
     display: block;
     max-width: 100%;
@@ -161,16 +165,28 @@ html {
     transition: 200ms ease-in-out;
 }
 
-.project-tile > .img-info {
+.project-tile > .img-info.fade {
     opacity: 0;
 }
 
-.project-tile:hover > .img-info {
+.project-tile:hover > .img-info.fade {
     opacity: 1;
 }
 
-.project-tile:hover > img {
+.project-tile:hover > img.blur {
     filter: blur(0.5rem);
+}
+
+.project-tile:hover > img.zoom {
+    transform: scale(1.1);
+}
+
+.project-tile > .img-info.slide-left {
+    transform: translateX(-100%);
+}
+
+.project-tile:hover > .img-info.slide-left {
+    transform: translateX(0%);
 }
 
 #profile-link {
