@@ -94,7 +94,7 @@ html {
 
 /* PROJECTS */
 #projects {
-    height: 100vh;
+    height: auto;
     padding-top: 15rem;
     background-color: var(--main-blue);
 }
@@ -113,8 +113,6 @@ html {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 35rem)); */
 }
 
 .project-tile {
