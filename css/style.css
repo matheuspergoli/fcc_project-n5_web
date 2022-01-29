@@ -96,15 +96,17 @@ html {
 #projects {
     height: auto;
     background-color: var(--main-blue);
-    padding-top: clamp(8rem, 10vw, 15rem);
+    padding-top: clamp(9rem, 10vw, 15rem);
 }
 
 #projects-header {
-    margin: 0px auto 10rem auto;
+    margin-left: auto;
+    margin-right: auto;
     width: fit-content;
     color: var(--main-white);
     font-family: var(--font-raleway);
     font-size: clamp(2rem, 5vw, 7rem);
+    margin-bottom: clamp(4rem, 5vw, 10rem);
     padding-bottom: clamp(0rem, 1vw, 1rem);
     border-bottom: 5px solid var(--main-white);
 }
@@ -127,4 +129,5 @@ html {
     object-fit: cover;
     aspect-ratio: 1 / 1;
     border-radius: 1rem;
+    border: 3px solid var(--main-gray);
 }
