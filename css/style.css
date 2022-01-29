@@ -125,6 +125,7 @@ html {
     flex-grow: 1;
     flex-shrink: 1;
     height: fit-content;
+    border-radius: 1rem;
     width: clamp(30rem, 20vw, 60rem);
 }
 
@@ -165,4 +166,8 @@ html {
 
 .project-tile:hover > .img-info {
     opacity: 1;
+}
+
+.project-tile:hover > img {
+    filter: blur(0.5rem);
 }
