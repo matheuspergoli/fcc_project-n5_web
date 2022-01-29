@@ -35,6 +35,7 @@ html {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 2;
     width: 100%;
     background-color: var(--main-red);
     box-shadow: 0px 3px 0px 0px var(--main-gray);
@@ -118,16 +119,50 @@ html {
 }
 
 .project-tile {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
     flex-grow: 1;
     flex-shrink: 1;
     height: fit-content;
     width: clamp(30rem, 20vw, 60rem);
 }
 
+.img-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    inset: 0;
+    padding: 2rem;
+    font-weight: 800;
+    font-size: 3.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--main-red);
+    font-family: var(--font-poppins);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 .project-tile img {
+    display: block;
     max-width: 100%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
     border-radius: 1rem;
+    object-position: center;
     border: 3px solid var(--main-gray);
+}
+
+.project-tile > img,
+.project-tile > .img-info {
+    transition: 200ms ease-in-out;
+}
+
+.project-tile > .img-info {
+    opacity: 0;
+}
+
+.project-tile:hover > .img-info {
+    opacity: 1;
 }
