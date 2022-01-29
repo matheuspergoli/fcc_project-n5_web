@@ -21,3 +21,63 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
+
+.container {
+    margin: auto;
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-red);
+}
+
+#link-wrapper {
+    display: flex;
+}
+
+.link {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--main-white);
+    font-family: var(--font-poppins);
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.link:hover {
+    background-color: var(--main-blue);
+}
+
+/* WELCOME SECTION */
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-gray);
+}
+
+#welcome-section > ::selection {
+    color: white;
+    background-color: tomato;
+}
+
+#welcome-section-header {
+    color: var(--main-white);
+    font-family: var(--font-raleway);
+    font-size: clamp(2.5rem, 7vw, 8rem);
+}
+
+#welcome-section-header_2 {
+    font-weight: 400;
+    font-style: italic;
+    color: var(--main-red);
+    font-family: var(--font-poppins);
+    font-size: clamp(2rem, 4vw, 6rem);
+}
