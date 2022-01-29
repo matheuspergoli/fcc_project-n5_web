@@ -117,7 +117,7 @@ html {
 
 .project-tile {
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
     height: fit-content;
     width: clamp(30rem, 20vw, 60rem);
 }
