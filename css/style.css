@@ -24,6 +24,8 @@ html {
 
 .container {
     margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 /* NAVBAR */
@@ -124,4 +126,7 @@ html {
 
 .project-tile img {
     max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
 }
