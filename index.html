@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/breakpoint-media.css">
     <script src="https://kit.fontawesome.com/cac8c32bc4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
     <title>FCC: Personal Portfolio</title>
 </head>
 <body>
+    <!-- NAVBAR -->
     <nav id="navbar">
         <img src="logo.png" alt="" id="logo">
         <ul id="link-wrapper">
@@ -22,16 +24,18 @@
             </li>
 
             <li>
-                <a class="link" href="#">Contact</a>
+                <a class="link" href="#contact-section">Contact</a>
             </li>
         </ul>
     </nav>
 
+    <!-- WELCOME SECTION -->
     <section id="welcome-section">
         <h1 id="welcome-section-header">Hey! I am Matheus Pergoli</h1>
         <h2 id="welcome-section-header_2">A Web Developer</h2>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects">
         <h1 id="projects-header">These are some of my projects</h1>
         <div class="container flex-projects">
@@ -93,5 +97,42 @@
             Show All <i class="fas fa-chevron-right"></i>
         </a>
     </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact-section">
+        <h1 id="contact-header">Let's work together...</h1>
+        <p id="sub-contact-header">How do you take your coffee?</p>
+        <div id="socials">
+            <div class="media">
+                <a class="media-link" href="https://www.facebook.com/matheus.pwal" target="_blank">
+                    <i class="fab fa-facebook-square"></i> Facebook
+                </a>
+            </div>
+
+            <div class="media">
+                <a class="media-link" href="https://github.com/matheuspergoli" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+
+            <div class="media">
+                <a class="media-link" href="mailto:matheus.pergoli2015@yahoo.com" target="_blank">
+                    <i class="fas fa-at"></i> Send a email
+                </a>
+            </div>
+
+            <div class="media">
+                <a class="media-link" href="https://api.whatsapp.com/send?phone=5511948411571&text=Olá!, Vamos conversar?" target="_blank">
+                    <i class="fas fa-mobile-alt"></i> Call me
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p class="footer-info">© All Rights Reserved</p>
+        <p class="footer-info">Created By Matheus Pergoli </p>
+    </footer>
 </body>
 </html>

@@ -216,3 +216,68 @@ html {
     margin-left: 0.5rem;
     transition-duration: 200ms;
 }
+
+/* CONTACT SECTION */
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: var(--main-gray);
+}
+
+#contact-header {
+    color: var(--main-white);
+    font-family: var(--font-raleway);
+    font-size: clamp(3rem, 9vw, 8.5rem);
+}
+
+#sub-contact-header {
+    font-style: italic;
+    margin-bottom: 5rem;
+    color: var(--main-red);
+    font-family: var(--font-poppins);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.media {
+    transition-duration: 200ms;
+}
+
+.media:hover {
+    transform: translateY(20%);
+}
+
+.media-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--main-white);
+    font-family: var(--font-raleway);
+    font-size: clamp(1.5rem, 6.5vw, 5rem);
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--main-gray);
+    border-top: 5px solid var(--main-red);
+}
+
+.footer-info {
+    flex-shrink: 1;
+    color: var(--main-white);
+    font-family: var(--font-poppins);
+    margin: clamp(2.3rem, 3.5vw, 3rem);
+    font-size: clamp(1.6rem, 3vw, 3rem);
+}
