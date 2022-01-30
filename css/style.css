@@ -207,3 +207,12 @@ html {
 #profile-link:hover {
     background-color: var(--main-red);
 }
+
+#profile-link:hover > .fa-chevron-right {
+    transform: translateX(20%);
+}
+
+.fa-chevron-right {
+    margin-left: 0.5rem;
+    transition-duration: 200ms;
+}
